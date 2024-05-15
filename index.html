@@ -1,0 +1,28 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1>Sudoku Solver</h1>
+      <div id="timer">Time: 00:00</div>
+      <div id="score">Score: 0</div>
+      <button id="shareScore" onclick="shareScore()">Share Score</button>
+    </div>
+    <table id="sudokuBoard"></table>
+    <br />
+    <button id="getSudoku" onclick="getSudoku()">Get Sudoku</button>
+    <button id="solveSudoku" onclick="solveSudoku()">
+      Stop and View Solution
+    </button>
+    <button id="resetBoard" onclick="resetBoard()">Reset Board</button>
+
+    <script src="Sudoku.js"></script>
+  </body>
+</html>
